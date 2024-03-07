@@ -1,0 +1,23 @@
+.header {
+  max-width: 50%;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.progressCalendar {
+  margin: 2rem auto;
+  max-width: 1200px;
+  background-color: red;
+  border: 1px solid black;
+  display: grid;
+  grid: repeat(7, 30px) / auto-flow;
+  grid-template-columns: repeat(auto-fit, 30px);
+}
+
+.daySquare {
+  margin: 4px;
+  width: 20px;
+  height: 20px;
+  background-color: lightblue;
+}
