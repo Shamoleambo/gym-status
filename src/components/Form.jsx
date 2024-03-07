@@ -1,9 +1,9 @@
 import { useState } from 'react'
-import { TypeAForm } from './typeForms/TypeAForm'
-import { TypeBForm } from './typeForms/TypeBForm'
-import { TypeCForm } from './typeForms/TypeCForm'
-import { TypeDForm } from './typeForms/TypeDForm'
-import { TypeEForm } from './typeForms/TypeEForm'
+import { TypeAForm } from './forms/TypeAForm'
+import { TypeBForm } from './forms/TypeBForm'
+import { TypeCForm } from './forms/TypeCForm'
+import { TypeDForm } from './forms/TypeDForm'
+import { TypeEForm } from './forms/TypeEForm'
 
 export function Form() {
   const [formType, setFormType] = useState('')
@@ -30,6 +30,8 @@ export function Form() {
         <option value='D'>D</option>
         <option value='E'>E</option>
       </select>
+      <label htmlFor="date">Date</label>
+      <input type='date' />
       {followingForm}
       <button className='btn-form' type='submit'>
         Done
