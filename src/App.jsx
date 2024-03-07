@@ -13,12 +13,19 @@ function App() {
     { date: '06/01/2001', note: 'ble-bla-bla', score: 3 },
     { date: '07/01/2001', note: 'bli-bla-bli', score: 3 },
     { date: '08/01/2001', note: 'blo-bla-bli', score: 1 },
-    { date: '09/01/2001', note: 'blu-bla-bli', score: 1 },
+    { date: '09/01/2001', note: 'blu-bla-bli', score: 1 }
   ])
+
+  const addDaySquare = () => {
+    setDays((prevState) => [
+      ...prevState,
+      { date: 'dummy', note: 'dummy', score: 0 }
+    ])
+  }
 
   return (
     <>
-      <Header />
+      <Header onAddDay={addDaySquare} />
       <ProgressCalendar days={days} />
     </>
   )
