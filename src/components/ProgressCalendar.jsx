@@ -1,5 +1,5 @@
 export function ProgressCalendar ({days}) {
   return <div className="progressCalendar">
-    {days.map(day => <div key={day.date} className="daySquare"></div>)}
+    {days.map(day => <div key={day.id} className="daySquare"></div>)}
   </div>
 }
