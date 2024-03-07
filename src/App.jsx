@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { ProgressCalendar } from './components/ProgressCalendar'
 import { Header } from './components/Header'
 import './App.css'
+import { Form } from './components/Form'
 
 function App() {
   const [days, setDays] = useState([
@@ -27,6 +28,7 @@ function App() {
     <>
       <Header onAddDay={addDaySquare} />
       <ProgressCalendar days={days} />
+      <Form />
     </>
   )
 }
