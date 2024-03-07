@@ -1,4 +1,4 @@
-import { Score } from './Score'
+import { Score } from '../miniForms/Score'
 
 export function CardioFrom() {
   return (

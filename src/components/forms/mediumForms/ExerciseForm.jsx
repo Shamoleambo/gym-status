@@ -1,6 +1,6 @@
-import { Load } from './Load'
-import { Repetitions } from './Repetitions'
-import { Score } from './Score'
+import { Load } from '../miniForms/Load'
+import { Repetitions } from '../miniForms/Repetitions'
+import { Score } from '../miniForms/Score'
 
 export function ExerciseForm({ name }) {
   return (

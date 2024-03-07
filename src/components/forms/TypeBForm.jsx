@@ -1,5 +1,5 @@
-import { CardioFrom } from './CardioForm'
-import { ExerciseForm } from './ExerciseForm'
+import { CardioFrom } from './mediumForms/CardioForm'
+import { ExerciseForm } from './mediumForms/ExerciseForm'
 
 export function TypeBForm() {
   return (

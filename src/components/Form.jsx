@@ -1,9 +1,9 @@
 import { useState } from 'react'
-import { TypeAForm } from './TypeAForm'
-import { TypeBForm } from './TypeBForm'
-import { TypeCForm } from './TypeCForm'
-import { TypeDForm } from './TypeDForm'
-import { TypeEForm } from './TypeEForm'
+import { TypeAForm } from './typeForms/TypeAForm'
+import { TypeBForm } from './typeForms/TypeBForm'
+import { TypeCForm } from './typeForms/TypeCForm'
+import { TypeDForm } from './typeForms/TypeDForm'
+import { TypeEForm } from './typeForms/TypeEForm'
 
 export function Form() {
   const [formType, setFormType] = useState('')

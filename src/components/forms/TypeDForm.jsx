@@ -1,7 +1,7 @@
-import { CardioFrom } from './CardioForm'
-import { ExerciseForm } from './ExerciseForm'
-import { Repetitions } from './Repetitions'
-import { Score } from './Score'
+import { CardioFrom } from './mediumForms/CardioForm'
+import { ExerciseForm } from './mediumForms/ExerciseForm'
+import { Repetitions } from './miniForms/Repetitions'
+import { Score } from './miniForms/Score'
 
 export function TypeDForm() {
   return (
