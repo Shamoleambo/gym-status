@@ -1,15 +1,5 @@
-export function ProgressCalendar () {
+export function ProgressCalendar ({days}) {
   return <div className="progressCalendar">
-    <div className="daySquare"></div>
-    <div className="daySquare"></div>
-    <div className="daySquare"></div>
-    <div className="daySquare"></div>
-    <div className="daySquare"></div>
-    <div className="daySquare"></div>
-    <div className="daySquare"></div>
-    <div className="daySquare"></div>
-    <div className="daySquare"></div>
-    <div className="daySquare"></div>
-    <div className="daySquare"></div>
+    {days.map(day => <div key={day.date} className="daySquare"></div>)}
   </div>
 }
