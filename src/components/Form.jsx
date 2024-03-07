@@ -1,24 +1,19 @@
 import { useState } from 'react'
-import { ExerciseForm } from './ExerciseForm'
-import { CardioFrom } from './CardioForm'
+import { TypeAForm } from './TypeAForm'
+import { TypeBForm } from './TypeBForm'
+import { TypeCForm } from './TypeCForm'
+import { TypeDForm } from './TypeDForm'
+import { TypeEForm } from './TypeEForm'
 
 export function Form() {
   const [formType, setFormType] = useState('')
 
   let followingForm
-  if (formType === 'A') {
-    followingForm = (
-      <>
-        <div className='form-control-exercise'>
-          <h2>Type A</h2>
-          <ExerciseForm name='Trapézio' />
-          <ExerciseForm name='Bíceps' />
-          <ExerciseForm name='Abdominal' />
-          <CardioFrom />
-        </div>
-      </>
-    )
-  }
+  if (formType === 'A') followingForm = <TypeAForm />
+  else if (formType === 'B') followingForm = <TypeBForm />
+  else if (formType === 'C') followingForm = <TypeCForm />
+  else if (formType === 'D') followingForm = <TypeDForm />
+  else if (formType === 'E') followingForm = <TypeEForm />
 
   return (
     <form className='form'>
